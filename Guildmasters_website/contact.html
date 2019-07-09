@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<!-- <script> $(document).ready(function() {});</script> -->
+<!-- above script stops javascript from loading before the page has; 
+      does this help to have in html doc?-->
+
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+   <title>CONTACT</title>
+   <link rel="stylesheet" href="css/small.css" />
+   <link rel="stylesheet" href="css/medium.css" />
+   <link rel="stylesheet" href="css/large.css" />
+   <link rel="stylesheet" href="css/reset.css" />
+</head>
+
+<body>
+   <header>
+      <h1>guilds of ravnica</h1>
+   </header>
+   <nav>
+      <ul class="main_menu">
+         <li><a href="index.html">ravnica</a></li>
+         <li><a href="guilds.html">guilds</a></li>
+         <li><a href="monsters.html">monsters</a></li>
+         <li><a href="contact.html">contact</a></li>
+         <li><a href="MTG.html">mtg</a></li>
+      </ul>
+   </nav>
+   <form id="contactForm">
+      <fieldset class="Personal_infoBox">
+         <legend>Personal Information</legend>
+         <label>First Name <span class="required">(required)</span><input id="firstName" type="text" pattern="[a-zA-Z]+"
+               name="name" placeholder="John" required /></label>
+         <label>Last Name <span class="required">(required)</span><input id="lastName" type="text" pattern="[a-zA-Z]+"
+               name="name" placeholder="Smith" required /></label>
+         <label>
+            Email <span class="required">(required)</span><input id="email" type="email" name="email" required
+               placeholder="someone@gmail.com" /></label>
+         <label>
+            Birthdate <span class="required">(required)</span><input id="birthDate" type="date" name="birthdate"
+               required placeholder="01/01/2001" />
+         </label>
+         <label>Phone <input id="phone" type="tel" name="phone" /></label>
+         <label class="male_female_Container">
+            <label>Male<input type="radio" name="sexRadioBt" id="Male" value="has a dick" /></label>
+            <label>Female<input type="radio" name="sexRadioBt" id="Female" value="does not have a dick" /></label>
+         </label>
+         <label class="country">
+            Country
+         </label>
+         <select id="countryDop" class="countryDrop">
+            <option value="" disabled selected required>Select A Country</option>
+            <option value="FR">France</option>
+            <option value="US">United States</option>
+         </select>
+         <label>Progress
+            <progress id="progressBar" max="100" value="0"></progress>
+         </label>
+      </fieldset>
+      <label>Your Question<textarea></textarea></label>
+      <input type="submit" class="submitBtn"></input>
+   </form>
+   <footer>
+      <p>what side are you on?</p>
+   </footer>
+   <script src="../javascript/app.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,27 @@
+@media only screen and (min-width: 560px) {
+  
+   header {
+      min-height: 30vh;
+   }
+
+   header h1 {
+      text-transform: uppercase;
+      text-align: center;
+      text-shadow: var(--textShadow-color);
+      -moz-text-shadow: var(--textShadow-color);
+      -webkit-text-shadow: var(--textShadow-color);
+      color: var(--text-white);
+      margin-bottom: 0rem;
+      margin-top: 0rem;
+      font-size: 3rem;
+      padding-top: 1.5rem;
+      padding-bottom: 2rem;
+   }
+
+   /* <--------------------------------nav bar----------------------------------> */
+   
+   .main_menu li {
+      padding: 1rem;
+      font-size: 1.5rem;
+   }
+}

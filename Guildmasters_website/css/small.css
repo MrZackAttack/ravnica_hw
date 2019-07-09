@@ -1,0 +1,314 @@
+html {
+   -webkit-text-size-adjust: 100%;
+   -ms-text-size-adjust: 100%;
+}
+
+* { 
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+:root {
+   --background-color: #414141;
+   --textShadow-color: .2rem .2rem #000;
+   --dnd-red: #ec2127;
+   --text-white: #fff;
+   --nav-bar-grey: #818181;
+   --valid: #2aaf5d;
+   --typebox: #414141;
+   --boxShadow: #202020;
+   --footerColor: #646464;
+}
+
+/* <--------------------------------body----------------------------------> */
+
+body {
+   font-family: "Arial", sans-serif;
+   background-color: var(--background-color);
+   padding-bottom: 3rem;
+   min-height: 100vh;
+}
+
+header {
+   background-image: url(../images/ravnicaHeader.jpg);
+   background-repeat: no-repeat;
+   background-position: 50%;
+   background-size: cover;
+   /* max-height: 13vh; */
+   /* max-width: 100%; */
+}
+
+header h1 {
+   text-transform: uppercase;
+   text-align: center;
+   text-shadow: var(--textShadow-color);
+   -moz-text-shadow: var(--textShadow-color);
+   -webkit-text-shadow: var(--textShadow-color);
+   color: var(--dnd-red);
+   margin-bottom: 0rem;
+   margin-top: 0rem;
+   font-size: 2rem;
+   padding-bottom: 2rem;
+   padding-top: .75rem;
+}
+
+
+
+/* <-------------------------------navigation bar------------------------------> */
+
+.main_menu {
+   padding: .5rem 0 .5rem 0;
+   text-align: center;
+   line-height: 1.5rem;
+   background-color: var(--nav-bar-grey);
+   margin-bottom: 2rem;
+}
+
+.main_menu li {
+   display: inline;
+   padding: 0;
+   font-size: 1.2rem;
+}
+
+.main_menu a {
+   font-family: "Arial", bold;
+   text-decoration: none;
+   color: var(--text-white);
+   padding: .8rem;
+   font-variant: small-caps;
+}
+
+.main_menu a:hover {
+   color: var(--dnd-red);
+}
+
+/* <--------------------------------iframe-------------------------------> */
+
+.iframe-container {
+   display: block;
+   margin-top: 1rem 0;
+   padding: 0;
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+}
+/* <----------------------------guild symbols---------------------------> */
+
+.guild-symbols {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin-right: 1rem;
+   margin-left: 1rem;
+   margin-top: 1rem;
+}
+
+.row-guild-symbols {
+   margin: 2rem;
+   flex: 100%;
+}
+
+.row-guild-symbols img {
+   vertical-align: middle;
+   max-height: 7rem;
+   margin: 0.5rem;
+}
+
+p1 {
+   display: block;
+   color: var(--text-white);
+   margin-top: 1rem;
+   margin-left: 1rem;
+   margin-right: 1rem;
+   justify-content: center;
+}
+
+/* <------------------------------monsters-----------------------------> */
+
+#angel {
+   max-width: 100%;
+   margin: 1rem 25%;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 1rem;
+}
+
+.monsterNameAngel {
+   color: var(--text-white);
+   text-transform: uppercase;
+   text-align: center;
+}
+
+
+/* <---------------------------contact form-----------------------> */
+
+form {
+   color: var(--text-white);
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+form label {
+   margin: .5rem 0 .5rem 0;
+   display: block;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+label textarea {
+   color: var(--text-white)
+}
+
+span.required {
+   font-size: 0.75rem;
+   color: var(--dnd-red);
+}
+
+input,
+textarea {
+   padding: 0.5rem;
+   display: block;
+   font-size: 1rem;
+   background-color: var(--nav-bar-grey);
+   border: none;
+   color: var(--text-white);
+   width: 100%;
+}
+
+textarea {
+   min-height: 13rem;
+   color: var(--text-white);
+}
+
+input:required {
+   border: 2px solid var(--dnd-red);
+}
+
+input:required:valid {
+   border-color: var(--valid);
+}
+
+input:focus,
+textarea:focus {
+   background-color: var(--typebox);
+   color: var(--text-white);
+}
+
+.male_female_Container {
+   max-width: 1200px;
+   display: flex;
+   justify-content: left;
+   align-content: left;
+}
+
+input[name="Male"] {
+   max-width: 1200px;
+   margin: 0 10rem 0 0;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+input[name="Female"] {
+   max-width: 1200px;
+   margin: 0 10rem 0 0;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.countryDrop {
+   background: var(--nav-bar-grey);
+   color: var(--text-white);
+   border: none;
+   width: 10rem;
+   height: 2rem;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 1rem;
+   box-shadow: 0 0.2rem 1rem var(--boxShadow);
+   outline: none;
+   padding: 0.3rem;
+}
+
+.Personal_infoBox {
+   padding: 1rem;
+   border-radius: 0.7rem;
+   text-align: left;
+   font-family: Arial, Helvetica, sans-serif;
+   border-color: var(--nav-bar-grey);
+   border-style: solid;
+   border-width: 0.2rem;
+}
+
+.Personal_infoBox legend {
+   color: var(--text-white);
+   padding: 0.4rem;
+   font-size: 1.5rem;
+}
+
+.submitBtn {
+   width: 100%;
+   border: none;
+   background-color: var(--dnd-red);
+   font-size: 1.5rem;
+   padding: 0.5rem;
+   border-radius: 1rem;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   margin-bottom: 3rem;
+   
+}
+
+/* <--------------------------------placeholder color--------------------------- */
+
+::-webkit-input-placeholder {
+   color: var(--background-color);
+}
+
+::-ms-input-placeholder {
+   color: var(--background-color);
+}
+
+::-moz-input-placeholder {
+   color: var(--background-color);
+   opacity: 1;
+}
+
+/* <----------------------------------progress bar--------------------------------> */
+
+/* #myProgress {
+   background-color: (var(--dnd-red));
+} */
+
+
+/* <----------------------------------Thank You--------------------------------> */
+
+p2 {
+   margin: 1rem 0;
+   padding: 0;
+   color: var(--text-white);
+   text-align: center;
+   font-size: 5em;
+   font-family: Arial, sans-serif;
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+/* <------------------------------footer-----------------------------> */
+
+footer {
+   text-align: center;
+   background-color: var(--footerColor);
+   color: var(--text-white);
+   padding: 1rem;
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+   height: 2rem;
+   text-transform: capitalize;
+}
+
+footer p {
+   padding: .5rem;
+}
